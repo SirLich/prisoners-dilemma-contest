@@ -5,7 +5,7 @@ import os
 dir = os.path.dirname(os.path.abspath(__file__))
 modules = [os.path.splitext(_file)[0] for _file in os.listdir(dir) if not _file.startswith('__')]
 
-bots  = []
+bots = []
 
 for mod in modules:
-    exec(f"from bots import {mod}; bots.append({mod})")
+    exec(f"from py_bots import {mod}; bots.append({mod})")

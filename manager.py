@@ -11,7 +11,7 @@ import json
 dir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(dir)
 
-from bots import bots as raw_bots
+from py_bots import bots as raw_bots
 
 # The set of bots
 bots = []
